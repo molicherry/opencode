@@ -15,7 +15,8 @@ RUN apk add --no-cache \
     nodejs \
     npm \
     python3 \
-    py3-pip
+    py3-pip \
+    uv
 
 FROM base AS build-amd64
 COPY dist/opencode-linux-x64-baseline-musl/bin/opencode /usr/local/bin/opencode
